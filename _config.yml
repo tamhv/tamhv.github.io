@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Coding journal
+title: coding.log
 subtitle:
 description:
 keywords:
@@ -89,3 +89,6 @@ theme_config:
     # linkedin: /
   logo:
     enabled: false
+  nav:
+    home: /
+    articles: /archives/
