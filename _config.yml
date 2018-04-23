@@ -80,3 +80,12 @@ theme: cactus
 deploy:
   type: git
   repo: https://github.com/tamhv/tamhv.github.io
+
+theme_config:
+  social_links:
+    github: http://github.com/tamhv
+    # twitter: /
+    # facebook: /
+    # linkedin: /
+  logo:
+    enabled: false
