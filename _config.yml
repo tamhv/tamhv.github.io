@@ -80,6 +80,7 @@ theme: cactus
 deploy:
   type: git
   repo: https://github.com/tamhv/tamhv.github.io
+  branch: master
 
 theme_config:
   social_links:
