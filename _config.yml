@@ -94,10 +94,10 @@ theme_config:
     home: /
     articles: /archives/
 
-google_analytics:
-  enabled: true
-  id: 'UA-118765152-1'
+  google_analytics:
+    enabled: true
+    id: 'UA-118765152-1'
 
-disqus:
-  enabled: true
-  shortname: 'coding-log-1'
+  disqus:
+    enabled: true
+    shortname: 'coding-log-1'
