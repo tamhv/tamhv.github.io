@@ -838,3 +838,5 @@ View state `user`
 {% asset_img 12.png %}
 
 Finish!
+
+Github: https://github.com/tamhv/react-semantic-ui-boilerplate
