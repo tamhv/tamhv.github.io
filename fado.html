@@ -8,30 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 </head>
 <body>
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
     <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v6.0'
-        });
-      };
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : '1529400827287507',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v6.0'
+          });
+        };
+      </script>
+      <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
 
-      (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-    <!-- Your customer chat code -->
-    <div class="fb-customerchat"
-      attribution=setup_tool
-      page_id="844167035928671"
-theme_color="#a695c7">
-    </div>
+      <div class="fb-messengermessageus" 
+  messenger_app_id="1529400827287507>" 
+  page_id="844167035928671"
+  color="blue"
+  size="standard">
+</div>
 <h4>hello fado</h4>
 </body>
 </html>
