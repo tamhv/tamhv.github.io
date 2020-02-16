@@ -1,19 +1,47 @@
-<!DOCTYPE html>
+<!-- 
+Copyright 2016-present, Facebook, Inc.
+All rights reserved.
+This source code is licensed under the license found in the
+LICENSE file in the root directory of this source tree.
+-->
 <html>
-<head>
-    <!-- so meta -->
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <style>
-</style>
-</head>
-<body>
-    <h2>Click Messenger icon to chat with us.</h2>
-    <a class="btn" href="https://m.me/cutest.girls.ever" title="Chat now">
-        <img id="fb_msg_icon" src="http://store-images.s-microsoft.com/image/apps.7488.13510798886918977.69182166-f125-495d-80d2-44fdaab21523.8fcea13e-5d9a-48a9-9937-b26deeced1b5">
-      </a>
-</body>
+    <title>Facebook Messenger Demo</title>
+  </head>
+  <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId: '379542705504383',
+          xfbml: true,
+          version: 'v6.0'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <h1>Facebook Messenger Demo</h1>
+    <div>
+      <p>The "Message Us" plugin can be used to immediately start a conversation and send the person to Messenger. On the desktop web, the user is sent to messenger.com and on mobile they are sent to the Messenger native app.</p>
+
+      <div class="fb-messengermessageus" 
+        messenger_app_id='379542705504383'
+        page_id='1498092567076147'
+        color="blue"
+        size="xlarge">
+      </div>
+    </div>
+
+  </body>
 </html>
